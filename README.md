@@ -5,3 +5,4 @@
 ### Do we need to module build order?
 
 ### What can be improved?
+1) Find a better way how to share eslint config as tsconfig
