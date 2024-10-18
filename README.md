@@ -16,9 +16,10 @@ However, I'm still struggling to run host app in `dev` mode, while everything wo
 ### Do we need to module build order?
 Yes, first we need to build remote components and then run host app build.
 
-### What can be improved?
+### What can be improved in this repo?
 1) Find a better way how to share eslint config as tsconfig.
 2) Declare remote modules to resolve Typescript "Cannot find module" error.
+3) Provide more complex components with dependencies to some packages instead of plain text.
 
 ### Is it worth it?
 In this example we are using `@originjs/vite-plugin-federation` package which is becoming outdated and author itself suggest
