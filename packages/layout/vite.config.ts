@@ -10,7 +10,7 @@ export default defineConfig({
       name: "federation/layout",
       filename: "remoteEntry.js",
       exposes: {
-        './Layout': './src/App'
+        './Layout': './src/Layout'
       },
       shared: ['react','react-dom']
     })
