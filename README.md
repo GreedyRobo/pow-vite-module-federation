@@ -1,15 +1,14 @@
 ## Q&A
 
 ### Do modules lazily load on the client side or are they prebuilt?
+Modules are not statically prebuilt and loading dynamically while the app is running on the client side.
 
 ### Can you use Vite `dev` mode?
-You can use `dev` mode only while developing module individually, once you are running `host` app all modules must be prebuild and served using `npm run preview` command. 
+You can use `dev` mode only while developing module individually, once you are running `host` app all modules must be prebuilt and served using `preview` command. 
 
 Note from package docs:
 
-```
-Only the Host side supports dev mode, the Remote side requires the RemoteEntry.js package to be generated using vite build. This is because Vite Dev mode is Bundleless and you can use vite build --watch to achieve a hot update effect.
-```
+> Only the Host side supports dev mode, the Remote side requires the RemoteEntry.js package to be generated using vite build. This is because Vite Dev mode is Bundleless and you can use vite build --watch to achieve a hot update effect.
 
 However, I'm still struggling to run host app in `dev` mode, while everything works with `build` and `preview` commands.
 
