@@ -1,4 +1,4 @@
-function App() {
+function Dashboard() {
   return (
     <>
       <div>Dashboard</div>
@@ -6,4 +6,4 @@ function App() {
   )
 }
 
-export default App
+export default Dashboard

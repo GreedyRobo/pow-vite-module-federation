@@ -7,10 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "federation/dashboard",
-      filename: "remoteEntry.js",
-      exposes: {
-        './Dashboard': './src/Dashboard'
+      name: "federation/host",
+      remotes: {
+        remoteLayout: 'http://localhost:5001/assets/remoteEntry.js',
+        remoteDashboard: 'http://localhost:5002/assets/remoteEntry.js',
       },
       shared: ['react','react-dom']
     })
